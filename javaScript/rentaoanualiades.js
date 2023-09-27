@@ -1,14 +1,14 @@
-var formulario = document.forms.formulario_anVencidas
-var resultado = document.getElementById("res-anuAdelantadas")
+var formulario = document.forms.formulario_rentaAn
+var resultado = document.getElementById("res-rentaAnu")
 
 formulario.monto.oninput = calcularAV
-formulario.renta.oninput = calcularAV
+formulario.años.oninput = calcularAV
 formulario.interes.oninput = calcularAV
 
 
 function calcularAV() {
-    let s = parseFloat(formulario.monto.value)
-    let r = parseFloat(formulario.renta.value)
+    let V = parseFloat(formulario.monto.value)
+    let n = parseFloat(formulario.renta.value)
     let i = parseFloat((formulario.interes.value)/100)
     let total =((Math.log10((s*i)+r))-Math.log10(r))/(Math.log10(1+i))
 //((Math.log10((s = i + r(1+i))-(Math.log10(r(1+i))/(Math.log10(1+i))))

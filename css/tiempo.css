@@ -1,8 +1,10 @@
 :root{
-    --fondo:#a551e2;
-    --primario:#8124bf;
-    --fuente:#f2f2f2;
-    --fuente-claro:#e9dee1;
+    --fondo:rgb(179, 89, 232);
+    --primario:rgb(132, 43, 179);
+    --fuente:black;
+    --fuente-claro:rgb(195, 104, 240);
+    --color:rgb(246, 240, 241);
+    --color2:rgb(254, 247, 246);
 
 }
 
@@ -26,7 +28,7 @@ main{
 .contenedor{
     width: 315px;
     height: 160px;
-    background-color: var(--primario);
+    background-color: var(--color2);
     border-radius: 12px;
     border: 12px;
     padding: 12px;
@@ -42,11 +44,11 @@ main{
 }
 
 .contenedor:hover{
-    box-shadow: 5px 5px 50px var(--fuente-claro);
+    box-shadow: 5px 5px 50px var(--color2);
 }
 
 .contenedor a img{
-    width: 85%;
+    width: 100%;
     border-radius: 8px;
 }
 
@@ -76,17 +78,17 @@ form{
 input{
     width: 100px;
     height: 50px;
-    border: 1px solid var(--funte);
+    border: 1px solid var(--primario);
     border-radius: 8px;
     font-size: 20px;
     padding-left: 17px;
     margin: 5px;
 }
 
-#res-ANvencidas{
+#res-anuAdelantadas{
     width: 120px;
     height: 50px;
-    border: 1px solid var(--funte);
+    border: 1px solid var(--fuente-claro);
     border-radius: 8px;
     font-size: 20px;
     padding-left: 17px;
@@ -94,8 +96,8 @@ input{
     text-align: center;
     padding-top: 5px;
     box-sizing: border-box;
-    background-color: var(--fuente);
-    color: var(--primario);
+    background-color: var(--color2);
+    color: var(--fuente);
 }
 
 input:focus{
@@ -112,7 +114,7 @@ input:focus{
     text-align: center;
     padding-top: 10px;
     box-sizing: border-box;
-    color: var(--fondo);
+    color: var(--fuente);
     text-decoration: none;
 }
 
